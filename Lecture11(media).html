@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- Key Points:
+    loading="lazy": Defers loading of the resource until it is near the viewport.
+    loading="eager": Loads the resource immediately (default behavior for critical resources).
+    loading="auto": Lets the browser decide the best loading strategy. -->
+    <!-- Mainly loading-lazy is using for image and iframes -->
+    <div>
+        <img src="My Pic.jpeg" alt="Picture" width="70px" height="50px" loading="lazy">
+        <!-- Here,controls attribute is necessary than only audio file comes. -->
+        <audio src="Audio.mp3" controls></audio>
+        <!-- Another method for Audio and same for video also do with same format.-->
+        <audio controls>
+            <source src="Audio.mp3" type="audio/mp3">
+        </audio>
+        <video src="video.mp4" height="300px" controls></video>
+        <br>
+        <br>
+        <!-- If we want to insert from another to here,then we are able to use iframe -->
+        <iframe src="../DSA Practice questions/Week2Lec1(pattern).cpp" ></iframe>
+        <br>
+        <br>
+        <!-- Directly pasting of youTube link,can't open the link....at the place of(watch?v=),
+        We have to write (embed/). -->
+        <iframe src="https://www.youtube.com/embed/0oe7CF-TY_U"></iframe>
+        
+
+    </div>   
+                  
+</body>
+</html>

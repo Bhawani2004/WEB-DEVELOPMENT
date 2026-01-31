@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form >
+        <!-- In Default type is text,if we will not declare anythig in text and writing name after type is good practice.
+        In name try to give meaning that statement will be used. -->
+        <label for="textfield1">Textfield:</label>
+        <input type="text" name="textfield1" id="textfield1">
+        <br>
+        <br>
+        <!-- We have not to attach with label in button type -->
+        <label for="button1">Button:</label>
+        <input type="submit" name="button1" id="button1" value="Subscribe">
+        <br>
+        <br>
+        <!-- In these three radiobutton,we are able to select all three -->
+        <label for="radio1">RadioButton1:</label>
+        <input type="radio" name="radio1" id="radio1">
+
+        <label for="radio2">RadioButton2:</label>
+        <input type="radio" name="radio2" id="radio2" >
+
+        <label for="radio3">RadioButton3:</label>
+        <input type="radio" name="radio3" id="radio3" > 
+
+        <!-- How to choose only one radio Button? -->
+        <!-- Here,name of all three radio buttons are same.Then we are able to select only one button at once. -->
+        <!-- And if we write in one fieldset,then also we are able to select only one button at once. -->
+        <label for="radio1">RadioButton1:</label>
+        <input type="radio" name="group1" id="radio1">
+
+        <label for="radio2">RadioButton2:</label>
+        <input type="radio" name="group1" id="radio2">
+
+        <label for="radio3">RadioButton3:</label>
+        <input type="radio" name="group1" id="radio3">
+
+        <fieldset>
+        <legend>Please select your preferred contact method:</legend>
+        <div>
+        <input type="radio" id="contactChoice1" name="contact" value="email" />
+        <label for="contactChoice1">Email</label>
+
+        <input type="radio" id="contactChoice2" name="contact" value="phone" />
+        <label for="contactChoice2">Phone</label>
+
+        <input type="radio" id="contactChoice3" name="contact" value="mail" />
+        <label for="contactChoice3">Mail</label>
+        </div>
+        <div>
+        <button type="submit">Submit</button>
+        </div>
+        </fieldset>
+        <br>
+        <br>
+        
+        <label for="checkbox1">English:</label>
+        <input type="checkbox" name="checkbox1" id="checkbox1" >
+
+        <label for="checkbox2">Hindi:</label>
+        <input type="checkbox" name="checkbox2" id="checkbox2" > 
+        <br>
+        <br>
+
+        <label for="fileselect">Upload:</label>
+        <input type="file"  name="fileselect" id="fileselect">
+        <br>
+        <br>
+
+        <input type="image" name="imagebutton1" id="imagebutton1" alt="Click Here" src="Button1.png"
+        height="50px" width="50px">
+        <br>
+        <label for="password1">Enter Password:</label>
+        <input type="password" name="password1" id="password1" >
+        <br>
+        <br>
+        <label for="datepicker1">Choose Date:</label>
+        <input type="date" name="datepicker1" id="datepicker1">
+
+        
+
+
+    </form>
+</body>
+</html>
