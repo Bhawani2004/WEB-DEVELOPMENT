@@ -1,0 +1,71 @@
+<!-- CSS-Cascading Style Sheet. 
+HTML giving Skeleton,Structure,Description,Semantics(Meaning) of any type of Web page.
+CSS is used for syling,visual appearance of Web page.
+(Property-Value);e.g.,color:green;Here color is property and green is value here In this format
+written by using of CSS.
+Mainly CSS will be add by three types;that's are-Inline,Internal and External(In majority cases 
+we are using). -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- External CSS is adding in this by using of link. -->
+    <!-- According to order,External and Internal CSS is working...If External comes first then display accodingly otherwise internal comes first then follow that only.
+    But Inline is written there only display according to Inline and if !Important is mark anywhere then only happen as there mentioned Style. -->
+    <link rel="stylesheet" href="babbar(Lec13).css">
+    <style>
+        /* Internal CSS */
+        /* If we use !important then everywhere this Internal CSS will be used. */
+        p{
+            background-color: blue !important;
+        }
+        h1{
+            color: chartreuse;
+        }
+        /* By using of id Selector */
+        #footer1{
+            color: brown;
+        }
+        /* By using of class Selector */
+        .paraclass{
+            background-color: ivory;
+        }
+        /* By using of group Selector */
+        p,article{
+            width: 500px;
+        }
+        p.paraclass{
+            text-align: center;
+        }
+
+    </style>
+</head>
+<body>
+    <!-- If both Inline and Internal CSS be there then Inline CSS has be used as first priority
+    and if remaining property is not written in Inline then only consider the Internal CSS. -->
+    <h1 class="paraclass">Welcome to CodeHelp</h1>
+    <!-- Inline CSS -->
+    <p style="background-color: darkkhaki;">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+    Aperiam molestiae ea alias praesentium odio deserunt, id incidunt natus sunt? Tempora?</p>
+    <p style="color: aqua;">Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+    Ratione molestias nihil in minima aperiam impedit sunt exercitationem consectetur tempora eveniet, reprehenderit voluptatem?
+    Velit aut sit voluptatem! Nam ad possimus fuga.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+    Perspiciatis cumque ut sit cum, ab cupiditate velit minima dolor quia distinctio consequuntur fugit sunt!
+    Cumque doloremque explicabo, eum laboriosam iusto natus animi facilis facere consectetur libero in suscipit repudiandae consequuntur autem,
+    sapiente rem quis sequi! Delectus, maiores sequi? Sequi, laborum ipsum!</p>
+    <footer id="footer1">I am footer</footer>
+    <p class="paraclass">My name is Bhawana</p>
+    <p class="paraclass">I am in TamilNadu for Studing B.Tech </p>
+    <!-- Selector is the way by which any HTML elements be targeted and do Style in that accordingly by using CSS.
+    Selector are of types element(p,h1,article,section,etc.),id,class,group... -->
+    
+
+
+
+</body>
+</html>
+

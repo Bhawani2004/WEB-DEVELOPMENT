@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* *{
+            margin: 0;
+            height: 0;
+        } */
+        /* .child{
+            border: 1px solid black;
+            background-color: beige;
+            width: 20%;
+        }
+        .parent{
+            border: 1px solid green;
+            background-color: aqua;
+            width: 50%;
+        } */
+        /* .container{
+            border: 1px solid green;
+            background-color: beige;
+            height: 100vh;
+            width: 50vw;
+        } */
+        /* .box1{
+            border: 1px solid black;
+            font-size: 100px;
+            
+        } */
+        /* .wrapper{
+            font-size: 1em;
+        }
+        .px{
+            width: 200px;
+        }
+        .vw{
+            width: 10vw;
+        }
+        .em{
+            width: 10em; Means it's taken 160px(10*16(default size)) 
+        } */
+        .container{
+            padding: 10px;
+        }
+        .box{
+            padding: 10em; 
+            /*Here size becomes 100px bcz current parent is container class and it's be 10px and class box becomes 100px(10*10). */
+        }  
+        .firstPara{
+            border: 1px solid black;
+            font-size: 5rem; 
+            /*Here again size becomes 80px bcz root element default value is 16px and 16*5 is 80 only.And this is relative em. */
+        } 
+
+    </style>
+</head>
+<body>
+    <!-- <div class="parent">
+        <div class="child">
+            CHILD
+        </div>
+    </div>
+    <div class="container">
+        WELCOME TO CODEHELP
+    </div> -->
+    <!-- <div class="box1">
+        LOVE BABBAR
+    </div> -->
+    <!-- <div class="wrapper">
+        <div class="box px">I am 200px wide</div>
+        <div class="box vw">I am 10vw wide</div>
+        <div class="box em">I am 10em wide</div>
+    </div> -->
+    <p class="firstPara">
+        Hello Jee
+    </p>
+    <div class="container">
+        <div class="box">
+            Welcome to CodeHelp
+        </div>
+    </div>
+</body>
+</html>
